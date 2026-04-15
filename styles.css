@@ -1,0 +1,45 @@
+body{
+    background-color: aliceblue;
+}
+
+.container {
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    background-color: lightblue;
+    height: 70vh;
+    width: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 2px 2px 20px 2px rgb(148, 159, 152);
+    border-radius: 5px;
+    animation: game 6s ease infinite alternate;
+}
+
+@keyframes game {
+    from{
+        transform : rotateZ(-5deg)
+    }
+    to{
+        transform : rotateZ(3deg)
+    }
+}
+
+.btn {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 3px 3px 10px 3px rgb(74, 72, 72);
+    font-size: 1rem;
+    color: #000000
+}
